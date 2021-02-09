@@ -1,0 +1,20 @@
+clear all;
+close all;
+
+A1 = 2;
+A2 = 3;
+A3 = 5;
+f1 = 20;
+f2 = 5;
+f3 = 45;
+fi1 = 0;
+fi2 = 0;
+fi3 = 0;
+N = 500;
+fp = 100;
+t = 0:1/fp:(N-1)/fp;
+x = A1*sin(2*pi*f1*t+fi1) + A2*sin(2*pi*f2*t+fi2) + A3*sin(2*pi*f3*t+fi3);
+plot(t,x);
+title('Wykres sumy trzech sygnalow sinusoidalnych');
+xlabel('Czas [s]');
+ylabel('Sygnal');
